@@ -53,7 +53,7 @@ a{
 }
 
 a:hover{
-  color: #00f4aa;
+  color: #00ffcc;
   font-style: italic;
 
 }
@@ -84,12 +84,12 @@ a:hover{
 }
 
 #kara{
-  color:#00f4aa;
+  color:#00ffcc;
 }
 
 #gd, #dev, #phot{
   font-family: oswaldLight, sans-serif;
-  color:#00f4aa;
+  color:#00ffcc;
 
 }
 
