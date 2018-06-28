@@ -1,0 +1,178 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+@font-face {
+  font-family: oswald;
+  src: url(../fonts/oswald-regular.woff) format('woff')
+}
+@font-face {
+  font-family: oswaldLight;
+  src: url(../fonts/oswald-light.woff) format('woff')
+}
+@font-face {
+  font-family: oswaldBold;
+  src: url(../fonts/oswald-bold.woff) format('woff')
+}
+@font-face {
+  font-family: oswaldMedium;
+  src: url(../fonts/oswald-medium.woff) format('woff')
+}
+@font-face {
+  font-family: average;
+  src: url(../fonts/Average-Regular.ttf)
+}
+
+
+/* Global */
+body, html{
+  height:100%;
+  margin:0;
+  font-family: average, garamond, serif;
+  line-height: 2em;
+  color: #1a1a1a;
+}
+
+.pTitle{
+  font-family: oswaldMedium, sans-serif;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+a{
+  color: white;
+  font-family: oswaldLight;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: .3em 1em;
+  background-color: #1a1a1a;
+}
+
+a:hover{
+  color: #00f4aa;
+  font-style: italic;
+
+}
+
+/* Landing Page */
+.pimg1{
+  opacity:.8;
+  position: relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-image:url('../img/landing2.jpg');
+  height:100%;
+}
+
+
+.ptext{ /* FIX: center fine for desktop - resolve text size in media query */
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  color: #fff;
+  font-family: oswaldBold, sans-serif;
+  font-size: 5em;
+  line-height: 1.2em;
+  text-align: center;
+  text-shadow: 0 2px 10px #000;
+}
+
+#kara{
+  color:#00f4aa;
+}
+
+#gd, #dev, #phot{
+  font-family: oswaldLight, sans-serif;
+  color:#00f4aa;
+
+}
+
+
+
+
+/* About */
+.about{
+  padding:50px 80px;
+  font-size: 1.5em;
+  height: 100%;
+}
+
+.aboutContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  align-content: space-between;
+  align-items: center;
+  height: 100%;
+
+}
+
+
+.aboutContainer p{
+  padding-right: 32px;
+
+}
+
+
+.aboutImg{
+  background-image:url('../img/aboutsvg.svg');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  min-width: 50%;
+  height: 50%;
+}
+
+/* Portfolio */
+.portfolio{
+  padding: 50px 80px;
+  font-size: 1.5em;
+}
+
+
+
+.portfolio p{
+  padding-top: 32px;
+  padding-bottom: 128px;
+}
+
+.portImg1, .portImg2, .portImg3{
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: bottom;
+  width: 100%;
+  min-height: 300px;
+
+}
+
+.portImg1{
+  background-image:url('../img/about.jpg');
+}
+
+/* Footer */
+footer{
+  position: relative;
+  background-color: #1a1a1a;
+  background-size: cover;
+  min-height: 100px;
+  text-align: center;
+}
+
+footer p{
+  position: relative;
+  top:50px;
+  color:#fff;
+
+}
+
+/* TODO: edit media queries - make responsive */
+@media(max-width:568px){
+  .pimg1{
+    background-attachment:scroll;
+  }
