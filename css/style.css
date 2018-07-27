@@ -38,7 +38,7 @@ body, html{
 }
 
 .pTitle{
-  font-family: oswaldMedium, sans-serif;
+  font-family: oswald, sans-serif;
   font-size: 2em;
   line-height: 2em;
 }
@@ -76,7 +76,7 @@ a:hover{
   top: 15%;
   width: 100%;
   color: #fff;
-  font-family: oswaldBold, sans-serif;
+  font-family: oswald, sans-serif;
   font-size: 5em;
   line-height: 1.2em;
   text-align: center;
@@ -107,7 +107,6 @@ a:hover{
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
-  align-content: space-between;
   align-items: center;
   height: 100%;
 
