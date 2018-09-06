@@ -37,7 +37,7 @@ body, html{
   color: #1a1a1a;
 }
 
-.pTitle{
+.aboutHeading{
   font-family: oswald, sans-serif;
   font-size: 2em;
   line-height: 2em;
@@ -58,39 +58,38 @@ a:hover{
 
 }
 
-/* Landing Page */
-.pimg1{
+/* Landing Page */ /* FIX: alignment shenanigans in desktop and mobile? Is it broken or is it Chrome */
+.landing{
   opacity:.8;
-  position: relative;
-  background-position:center;
+  background-position:top;
   background-size:cover;
   background-repeat:no-repeat;
   background-attachment: fixed;
   background-image:url('../img/landing2.jpg');
   height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
-.ptext{ /* FIX: center fine for desktop - resolve text size in media query */
-  position: absolute;
-  top: 15%;
-  width: 100%;
-  color: #fff;
-  font-family: oswaldBold, sans-serif;
+.landing_text{
+  color: #ffd7a2;
+  font-family: oswald, sans-serif;
   font-size: 5em;
-  line-height: 1.2em;
   text-align: center;
+  line-height: 1.5em;
+  letter-spacing: 1em;
   text-shadow: 0 2px 10px #000;
+  /*position: relative;
+  top: 25%;*/
 }
 
-#kara{
-  color:#00ffcc;
-}
-
-#gd, #dev, #phot{
-  font-family: oswaldLight, sans-serif;
-  color:#00ffcc;
-
+#visit {
+  color: white;
+  font-family: average, sans-serif;
+  font-size: .5em;
+  letter-spacing: 1.2em;
 }
 
 
@@ -122,130 +121,29 @@ a:hover{
 
 
 .aboutImg{
-  background-image:url('../img/aboutsvg.svg');
-  background-size: contain;
+  background-image:url('../img/yucca_desert.jpeg');
+  background-size: cover;
   background-repeat:no-repeat;
   background-position: center;
 }
-
-/* Portfolio */
-/* Begin Test Grid */
-
-
- .gridCont{
-   background-color: grey;
-   display: grid;
-   grid-template-columns: 3fr 1fr;
-   grid-auto-rows: 250px;
-   color: transparent;
- }
-
-.gridCont .pTitle {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align:center;
- }
-
- .gridCont p{
-   font-size: 1.5em;
-   text-align:center;
- }
-
- .portImg{
-   background-size: cover;
-   background-repeat:no-repeat;
-   background-position: center;
- }
-
- .portImg:hover{
-   background-color: white;
-   color:black;
-   background-image:none;
- }
-
- .feat{
-   background-color: lightblue;
-   grid-row: 1/3;
- }
-
- .prevFeat{
-   background-color: lightpink;
-   grid-row: 1/4;
- }
-
- .featGal{
-   background-color: lightgreen;
-   display: grid;
-   grid-template-columns:repeat(3, 1fr);
-   grid-auto-rows: 250px;
-   grid-column: 1;
- }
-
-.ft1{
-  background-image:url('../img/aboutsvg.svg');
-}
-.ft2{
-  background-image:url('../img/aboutsvg.svg');
-}
-.ft3{
-  background-image:url('../img/aboutsvg.svg');
-}
-
- .oldWork{
-   background-color: purple;
-   display: grid;
-   grid-template-columns:repeat(4, 1fr);
-   grid-auto-rows: 125px;
-   grid-column: 1/3;
- }
-
- .ol1{
-   background-image:url('../img/cmykart.png');
- }
- .ol2{
-   background-image:url('../img/cmykart.png');
- }
- .ol3{
-   background-image:url('../img/cmykart.png');
- }
- .ol4{
-   background-image:url('../img/cmykart.png');
- }
- .ol5{
-   background-image:url('../img/cmykart.png');
- }
- .ol6{
-   background-image:url('../img/cmykart.png');
- }
- .ol7{
-   background-image:url('../img/cmykart.png');
- }
- .ol8{
-   background-image:url('../img/cmykart.png');
- }
-
 
 
 
 /* Footer */
 footer{
   background-color: #1a1a1a;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 80px;
-}
-
-footer p{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  text-align: center;
-  align-self:center;
+  font-family: average, serif;
 }
 
 }
 
 /* TODO: edit media queries - make responsive */
 @media(max-width:568px){
-  .pimg1{
+  .landing{
     background-attachment:scroll;
   }
