@@ -1,2 +1,2 @@
 # karias_portfolio
-https://wyssal.github.io/karias_portfolio/
+https://kazarias.github.io/karias_portfolio/
